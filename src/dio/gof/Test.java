@@ -8,6 +8,7 @@ import dio.gof.strategy.ComportamentoAgressivo;
 import dio.gof.strategy.ComportamentoDefensivo;
 import dio.gof.strategy.ComportamentoNormal;
 import dio.gof.strategy.Robo;
+import dio.gof.facade.Facade;
 
 public class Test {
 
@@ -44,5 +45,10 @@ public class Test {
         robo.mover();
         robo.mover();
         robo.mover();
+
+        // Testes Facade
+
+        Facade facade = new Facade();
+        facade.migrarCliente("Luciano", "83328130");
     }
 }
